@@ -47,7 +47,7 @@ BSS-DDU: Dual-Decoder Fusion UNetFormer-based Bimodal Semantic Segmentation for 
 
 --score.py：    这个文件包含了评价模型性能的评分函数。
 
---UnetFormer.py：这个文件包含了UnetFormer及UnetFormerEdge模型的实现代码。
+--UNetFormer.py：这个文件包含了UnetFormer及UnetFormerEdge模型的实现代码。
 
 # 提出问题
 如果你有任何问题或者建议，欢迎提出。
