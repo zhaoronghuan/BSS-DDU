@@ -31,7 +31,7 @@ BSS-DDU: Dual-Decoder Fusion UNetFormer-based Bimodal Semantic Segmentation for 
 
 --log/：        这个目录下会保存训练和测试的结果，包括每个模型的最佳模型文件（.pkl）和训练日志（.json）。
 
---utils.py：    包含了一些工具函数，如模型选择、训练等。
+--_utils.py：    包含了一些工具函数，如模型选择、训练等。
 
 --dataset.py：  包含了数据集加载的相关代码，主要是Dataset类。
 
