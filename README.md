@@ -1,49 +1,49 @@
-# 项目名称
+# Project Name
 Dual-Decoder UNetFormer-based Bimodal Semantic Segmentation for Coal Maceral Identification
 
-# 项目描述
-本项目主要是用于训练不同的深度学习模型，包括PSP, deeplabV3+, Unet, ATTUNet, UNetFormer, UNetFormerEDGE等。
+# Project Description
+This project is mainly used for training various deep learning models, including PSP, deeplabV3+, Unet, ATTUNet, UNetFormer, UNetFormerEDGE, etc.
 
-模型适用于双模态煤岩显微图像语义分割任务，我们提供了未标注的原始数据集，[点此下载](https://pan.cumt.edu.cn/share/b05dbe75a684704faf5ca340b5)。
+The models are suitable for bimodal coal maceral microscopic image semantic segmentation tasks. We provide the unlabeled raw dataset, [click here to download](https://pan.cumt.edu.cn/share/b05dbe75a684704faf5ca340b5).
 
-项目中包含模型训练的过程，以及训练结果的保存。
+The project includes the process of model training and the storage of training results.
 
-# 如何运行
-首先，你需要安装所有必要的依赖，可以通过以下命令安装：
+# How to Run
+First, you need to install all the necessary dependencies, which can be installed with the following command:
 ```pip install -r requirements.txt```
 
-然后，你可以通过运行main.py文件来开始训练和测试模型：
+Then, you can start training and testing the models by running the main.py file:
 ```python main.py```
 
-# 结果
-训练和测试的结果会被保存在"log/"目录下，包括每个模型的每折的最佳模型文件（.pkl）和训练日志（.json）。
+# Results
+The training and testing results will be saved in the "log/" directory, including the best model files (.pkl) and training logs (.json) for each fold of each model.
 
-你还可以通过运行代码来查看训练损失，验证损失和mIOU的可视化结果。
+You can also run the code to visualize the training loss, validation loss, and mIOU.
 
-# 文件结构
-以下是项目中各个文件的功能描述：
+# File Structure
+The following is a description of the functions of each file in the project:
 
---image/, label/:  存放本项目所使用的双模态数据集及其标签。
+--image/, label/:  Contains the bimodal dataset and its labels used in this project.
 
---log/:  这个目录下会保存训练和测试的结果，包括每个模型的最佳模型文件（.pkl）和训练日志（.json）。
+--log/:  This directory will save the training and testing results, including the best model files (.pkl) and training logs (.json) for each model.
 
---_utils.py:  包含了一些工具函数，如模型选择、训练等。
+--_utils.py:  Contains some utility functions, such as model selection and training.
 
---dataset.py:  包含了数据集加载的相关代码，主要是Dataset类。
+--dataset.py:  Contains code related to dataset loading, mainly the Dataset class.
 
---loss.py:  这个文件包含了用于训练模型的损失函数，例如Dice_Loss等。
+--loss.py:  This file contains the loss functions used for model training, such as Dice_Loss.
 
---main.py:  这是项目的主入口，包含了模型的整个训练过程以及参数设置等内容。
+--main.py:  This is the main entry point of the project, which includes the entire model training process and parameter settings.
 
---pre_processing.ipynb:  这个文件包含了数据预处理的相关代码，例如图像切分、增强等。
+--pre_processing.ipynb:  This file contains code related to data preprocessing, such as image segmentation and augmentation.
 
---README.md:  这个文件包含了项目的介绍和使用说明。
+--README.md:  This file contains the project introduction and usage instructions.
 
---requirements.txt:  这个文件列出了项目运行所需的所有依赖。
+--requirements.txt:  This file lists all the dependencies required to run the project.
 
---score.py:  这个文件包含了评价模型性能的评分函数。
+--score.py:  This file contains the scoring functions for evaluating model performance.
 
---UNetFormer.py:  这个文件包含了UnetFormer及UnetFormerEdge模型的实现代码。
+--UNetFormer.py:  This file contains the implementation code of the UnetFormer and UnetFormerEdge models.
 
-# 提出问题
-如果你有任何问题或者建议，欢迎提出。
+# Raise Questions
+If you have any questions or suggestions, feel free to raise them.
