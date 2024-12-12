@@ -16,9 +16,9 @@ Then, you can start training and testing the models by running the main.py file:
 ```python main.py```
 
 # Results
-The training and testing results will be saved in the "log/" directory, including the best model files (.pkl) and training logs (.json) for each fold of each model.
+The training and testing results will be saved in the ```log/``` directory, including the best model files (.pkl) and training logs (.json) for each fold of each model.
 
-You can also run the code to visualize the training loss, validation loss, and mIOU.
+You can also run the code to visualize the training loss, validation loss, and mIoU.
 
 # File Structure
 The following is a description of the functions of each file in the project:
