@@ -1,16 +1,13 @@
 # 项目名称
-BSS-DDU: Dual-Decoder Fusion UNetFormer-based Bimodal Semantic Segmentation for Automated Coal Maceral Identification
+Dual-Decoder UNetFormer-based Bimodal Semantic Segmentation for Coal Maceral Identification
 
 # 项目描述
 本项目主要是用于训练不同的深度学习模型，包括PSP, deeplabV3+, Unet, ATTUNet, UNetFormer, UNetFormerEDGE等。
 
-这些模型用于处理双模态图像数据的语义分割任务，我们提供了未标注的原始数据集，数据集下载链接如下：
+模型适用于双模态煤岩显微图像语义分割任务，我们提供了未标注的原始数据集，数据集下载链接如下：
 [image.zip 数据集](https://pan.cumt.edu.cn/share/b05dbe75a684704faf5ca340b5)
 
-
-项目中还包含了模型训练的过程，以及训练结果的保存。
-
-本项目还在补充完善中（2023.11.10）
+项目中包含模型训练的过程，以及训练结果的保存。
 
 # 如何运行
 首先，你需要安装所有必要的依赖，可以通过以下命令安装：
@@ -27,27 +24,25 @@ BSS-DDU: Dual-Decoder Fusion UNetFormer-based Bimodal Semantic Segmentation for 
 # 文件结构
 以下是项目中各个文件的功能描述：
 
---cut_image1/, cut_image2/, cut_label/:        包含本项目所使用的双模态数据集及其标签。
+--image/, label/:          存放本项目所使用的双模态数据集及其标签。
 
---cut_label_v/:  标签的可视化结果。
-
---log/：        这个目录下会保存训练和测试的结果，包括每个模型的最佳模型文件（.pkl）和训练日志（.json）。
+--log/：         这个目录下会保存训练和测试的结果，包括每个模型的最佳模型文件（.pkl）和训练日志（.json）。
 
 --_utils.py：    包含了一些工具函数，如模型选择、训练等。
 
---dataset.py：  包含了数据集加载的相关代码，主要是Dataset类。
+--dataset.py：   包含了数据集加载的相关代码，主要是Dataset类。
 
---loss.py：     这个文件包含了用于训练模型的损失函数，例如Dice_Loss等。
+--loss.py：      这个文件包含了用于训练模型的损失函数，例如Dice_Loss等。
 
---main.py：     这是项目的主入口，包含了模型的整个训练过程以及参数设置等内容。
+--main.py：      这是项目的主入口，包含了模型的整个训练过程以及参数设置等内容。
 
 --pre_processing.ipynb：    这个文件包含了数据预处理的相关代码，例如图像切分、增强等。
 
---README.md：   这个文件包含了项目的介绍和使用说明。
+--README.md：    这个文件包含了项目的介绍和使用说明。
 
---requirements.txt：    这个文件列出了项目运行所需的所有依赖。
+--requirements.txt：        这个文件列出了项目运行所需的所有依赖。
 
---score.py：    这个文件包含了评价模型性能的评分函数。
+--score.py：     这个文件包含了评价模型性能的评分函数。
 
 --UNetFormer.py：这个文件包含了UnetFormer及UnetFormerEdge模型的实现代码。
 
