@@ -4,7 +4,9 @@ BSS-DDU: Dual-Decoder Fusion UNetFormer-based Bimodal Semantic Segmentation for 
 # 项目描述
 本项目主要是用于训练不同的深度学习模型，包括PSP, deeplabV3+, Unet, ATTUNet, UNetFormer, UNetFormerEDGE等。
 
-这些模型用于处理双模态图像数据语义分割任务，具体数据集因为保密原因不能提供。
+这些模型用于处理双模态图像数据的语义分割任务，我们提供了未标注的原始数据集，数据集下载链接如下：
+[image.zip 数据集](https://pan.cumt.edu.cn/share/b05dbe75a684704faf5ca340b5)
+
 
 项目中还包含了模型训练的过程，以及训练结果的保存。
 
