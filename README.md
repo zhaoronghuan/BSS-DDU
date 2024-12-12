@@ -23,27 +23,27 @@ You can also run the code to visualize the training loss, validation loss, and m
 # File Structure
 The following is a description of the functions of each file in the project:
 
---image/, label/:  Contains the bimodal dataset and its labels used in this project.
+--```image/```, ```label/```:  Contains the bimodal dataset and its labels used in this project.
 
---log/:  This directory will save the training and testing results, including the best model files (.pkl) and training logs (.json) for each model.
+--```log/```:  This directory will save the training and testing results, including the best model files (.pkl) and training logs (.json) for each model.
 
---_utils.py:  Contains some utility functions, such as model selection and training.
+--```_utils.py```:  Contains some utility functions, such as model selection and training.
 
---dataset.py:  Contains code related to dataset loading, mainly the Dataset class.
+--```dataset.py```:  Contains code related to dataset loading, mainly the Dataset class.
 
---loss.py:  This file contains the loss functions used for model training, such as Dice_Loss.
+--```loss.py```:  This file contains the loss functions used for model training, such as Dice_Loss.
 
---main.py:  This is the main entry point of the project, which includes the entire model training process and parameter settings.
+--```main.py```:  This is the main entry point of the project, which includes the entire model training process and parameter settings.
 
---pre_processing.ipynb:  This file contains code related to data preprocessing, such as image segmentation and augmentation.
+--```pre_processing.ipynb```:  This file contains code related to data preprocessing, such as image segmentation and augmentation.
 
---README.md:  This file contains the project introduction and usage instructions.
+--```README.md```:  This file contains the project introduction and usage instructions.
 
---requirements.txt:  This file lists all the dependencies required to run the project.
+--```requirements.txt```:  This file lists all the dependencies required to run the project.
 
---score.py:  This file contains the scoring functions for evaluating model performance.
+--```score.py```:  This file contains the scoring functions for evaluating model performance.
 
---UNetFormer.py:  This file contains the implementation code of the UnetFormer and UnetFormerEdge models.
+--```UNetFormer.py```:  This file contains the implementation code of the UnetFormer and UnetFormerEdge models.
 
 # Raise Questions
 If you have any questions or suggestions, feel free to raise them.
